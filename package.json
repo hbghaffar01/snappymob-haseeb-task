@@ -1,0 +1,15 @@
+{
+  "name": "snappymob-haseeb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:a": "node challengeA.js",
+    "docker:build": "docker-compose build",
+    "docker:up": "touch processed_output.txt && docker compose up -d && sleep 5 && cat processed_output.txt",
+    "docker:rm": "docker compose rm -s -f -v",
+    "docker:rs": "npm run docker:rm && npm run docker:up"
+  },
+  "author": "Haseeb",
+  "license": "ISC",
+  "description": ""
+}

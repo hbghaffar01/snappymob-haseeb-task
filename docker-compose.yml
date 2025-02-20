@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  data-processor:
+    build: .
+    volumes:
+      - ./output.txt:/usr/src/app/output.txt
+      - ./processed_output.txt:/usr/src/app/processed_output.txt
+    command: node challengeB.js
